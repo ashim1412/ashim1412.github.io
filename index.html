@@ -1,242 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Site Under Construction — Ashim Shrestha</title>
-  <meta name="description" content="Ashim Shrestha — Personal website. Page under construction." />
-  <style>
-    :root {
-      --green-1: #0f5132;
-      /* deep */
-      --green-2: #198754;
-      /* mid */
-      --green-3: #66bb6a;
-      /* light */
-      --glass: rgba(255, 255, 255, 0.08);
-      --card: rgba(255, 255, 255, 0.06);
-      --radius: 18px;
-      color-scheme: light;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
-    * {
-      box-sizing: border-box
-    }
+    <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EF9K5C005"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    html,
-    body {
-      height: 100%
-    }
+  gtag('config', 'G-2EF9K5C005');
+</script>
+<!-- End Google Analytics -->
 
-    body {
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(25, 135, 84, 0.12), transparent),
-        linear-gradient(135deg, var(--green-1), var(--green-2) 55%, var(--green-3));
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding: 24px;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 880px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
-      border-radius: var(--radius);
-      padding: 36px;
-      box-shadow: 0 8px 30px rgba(3, 15, 10, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      display: flex;
-      gap: 28px;
-      align-items: center;
-      backdrop-filter: blur(6px) saturate(1.05);
-    }
-
-    .illustration {
-      min-width: 160px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .content {
-      flex: 1;
-    }
-
-    h1 {
-      margin: 0 0 8px 0;
-      font-size: clamp(20px, 3.6vw, 30px);
-      color: #ffffff;
-      letter-spacing: -0.4px;
-    }
-
-    p.lead {
-      margin: 0 0 18px 0;
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 15px;
-      line-height: 1.45;
-    }
-
-    .meta {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .pill {
-      background: var(--glass);
-      color: #eaf7ee;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .actions {
-      margin-top: 18px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    a.btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      padding: 10px 16px;
-      border-radius: 12px;
-      font-weight: 600;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
-
-    a.btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(1, 9, 4, 0.35)
-    }
-
-    .secondary {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.92);
-    }
-
-    /* small screen layout */
-    @media (max-width:720px) {
-      .card {
-        flex-direction: column;
-        padding: 24px
-      }
-
-      .illustration {
-        min-width: 120px
-      }
-    }
-
-    /* simple craft animation */
-    .gear {
-      animation: spin 6s linear infinite
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0)
-      }
-
-      to {
-        transform: rotate(360deg)
-      }
-    }
-
-    /* subtle floating */
-    .float {
-      animation: float 4.5s ease-in-out infinite
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0)
-      }
-
-      50% {
-        transform: translateY(-8px)
-      }
-
-      100% {
-        transform: translateY(0)
-      }
-    }
-
-    footer {
-      margin-top: 14px;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 13px
-    }
-  </style>
 </head>
 
 <body>
-  <main class="card" role="main">
-    <div class="illustration">
-      <!-- simple SVG construction / leaf + gear -->
-      <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true">
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#66bb6a" />
-            <stop offset="1" stop-color="#198754" />
-          </linearGradient>
-        </defs>
-        <rect x="6" y="6" width="128" height="128" rx="20" fill="url(#g1)" opacity="0.12" />
-        <g transform="translate(30,22)">
-          <path d="M9 54c9-6 22-13 32-10 10 3 20 15 9 26-11 11-30 7-46-2-7-5-3-14 5-14z" fill="#fff" opacity="0.95"
-            transform="translate(12,2) scale(.9)" />
-          <g transform="translate(6,12)">
-            <circle cx="20" cy="20" r="18" fill="#fff" opacity="0.06" />
-            <g transform="translate(8,8)">
-              <circle cx="12" cy="12" r="6" class="gear" fill="#fff" opacity="0.9" />
-            </g>
-          </g>
-        </g>
-      </svg>
-    </div>
 
-    <div class="content">
-      <h1>Working on something green &amp; lovely 🌿</h1>
-      <p class="lead">Hi — I'm Ashim. My personal website is getting a fresh update. I'm planting new content and will
-        be back soon with projects, write-ups, and dashboards. Meanwhile you can reach me below.</p>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <div class="meta">
-        <div class="pill">⚙️ Under construction</div>
-        <div class="pill">📬 <a href="mailto:ashimstha1412@gmail.com"
-            style="color:inherit; text-decoration:none">ashimstha1412@gmail.com</a></div>
-        <div class="pill">🌍 ashim-shrestha.com</div>
-      </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-greeting">
+                        <span>Hello</span>
+                        <span class="wave">👋</span>
+                    </div>
+                    <h1 class="hero-title">I'm Ashim Shrestha</h1>
+                    <p class="hero-subtitle">Data Analyst | Business consulting | Data Driven Decisions</p>
+                    <p class="hero-description">
+                        Creative developer with a passion for building beautiful and functional digital experiences.
+                        Specialized in modern web technologies and user-centered design.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary"onclick="window.open('./Ashim-Shrestha.pdf', '_blank')">Download CV</button>
+                        <button class="btn btn-secondary"
+                            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In
+                            Touch</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="actions">
-        <a class="btn" href="mailto:ashimstha1412@gmail.com">Contact me</a>
-        <a class="btn secondary" href="./Ashim-Shrestha.pdf" target="_blank" rel="noopener">See resume</a>
-      </div>
+        <!-- Contact Info Strip -->
+        <section class="contact-strip">
+            <div class="container contact-strip-inner">
+                <div class="contact-left">
+                    <div class="contact-item">
+                        <span class="icon">✉</span>
+                        <a href="mailto:ashimstha1412@gmail.com">ashimstha1412@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <a href="tel:+977-946854424">+977-946854424</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">in</span>
+                        <a href="https://www.linkedin.com/in/ashim-shrestha/" target="_blank">Ashim Shrestha</a>
+                    </div>
+                </div>
 
-      <footer>© <span id="year"></span> Ashim Shrestha — Designed with a green heart.</footer>
-    </div>
-  </main>
+                <div class="contact-right">
+                    <a href="#" class="social-icon">🌍</a>
+                    <a href="https://www.linkedin.com/in/ashim-shrestha/" class="social-icon" target="_blank" rel="noopener noreferrer">in</a>
+                    <a href="#" class="social-icon">f</a>
+                </div>
+            </div>
+        </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2>About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Text -->
+                    <div class="about-content">
+                        <p>
+                            I'm a passionate developer with 5+ years of experience in creating digital solutions.
+                            I love working with modern technologies and solving complex problems with elegant solutions.
+                        </p>
+                        <p>
+                            My focus is on building clean, scalable, and user-friendly applications that create
+                            real-world impact.
+                        </p>
+                    </div>
+
+                    <!-- Headshot -->
+                    <div class="about-image">
+                        <img src="./assets/headshot.jpg" alt="Ashim Shrestha">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2>Latest Works</h2>
+                </div>
+                <div class="works-grid">
+                    <div class="work-item">
+                        <div class="work-image">Project 1</div>
+                        <div class="work-content">
+                            <h3 class="work-title">E-commerce Platform</h3>
+                            <p class="work-client">Client: ABC Corp</p>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image">Project 2</div>
+                        <div class="work-content">
+                            <h3 class="work-title">SaaS Dashboard</h3>
+                            <p class="work-client">Client: XYZ Inc</p>
+                        </div>
+                    </div>
+                    <div class="work-item">
+                        <div class="work-image">Project 3</div>
+                        <div class="work-content">
+                            <h3 class="work-title">Mobile App</h3>
+                            <p class="work-client">Client: Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+    <a href="portfolio.html" class="see-more-button">
+        See More Projects →
+    </a>
+</div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number"></span>
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Twitter">𝕏</a>
+                        <a href="#" class="social-link" title="LinkedIn">in</a>
+                        <a href="#" class="social-link" title="GitHub">⚡</a>
+                        <a href="#" class="social-link" title="Email">✉</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved. | Designed with passion</p>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>

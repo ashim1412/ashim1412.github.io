@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Professional portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server",
+    "build": "echo 'Build script here'"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "professional"
+  ],
+  "author": "Ashim Shrestha",
+  "license": "MIT"
+}
