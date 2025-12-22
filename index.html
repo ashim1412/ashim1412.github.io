@@ -10,17 +10,15 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Google Analytics -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EF9K5C005"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2EF9K5C005');
-</script>
-<!-- End Google Analytics -->
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EF9K5C005"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2EF9K5C005');
+    </script>
+    <!-- End Google Analytics -->
 </head>
 
 <body>
@@ -53,10 +51,9 @@
                         I work with leaders and teams who want their data to mean something. Whether it's unlocking insights, building better dashboards, or charting new strategic directions-I'm here to translate complexity into clarity.
                     </p>
                     <div class="cta-buttons">
-                        <button class="btn btn-primary"onclick="window.open('./Ashim-Shrestha.pdf', '_blank')">Download CV</button>
+                        <button class="btn btn-primary" onclick="window.open('./Ashim-Shrestha.pdf', '_blank')">Download CV</button>
                         <button class="btn btn-secondary"
-                            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In
-                            Touch</button>
+                            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +84,7 @@
             </div>
         </section>
 
-
+        <!-- About Section -->
         <section id="about">
             <div class="container">
                 <div class="section-header">
@@ -98,21 +95,11 @@
                 <div class="about-grid">
                     <!-- Text -->
                     <div class="about-content">
-                        <p>
-                            I'm an analyst and strategist who believes data is only useful when it changes how you think.
-                        </p>
-                        <p>
-                            For years now, I've worked across different problems—understanding user behavior, building reporting systems that people actually use, identifying opportunities hidden in numbers. I'm equally comfortable deep in analysis and translating findings for non-technical leaders. That duality matters to me.
-                        </p>
-                        <p>
-                            I'm drawn to problems that require digging. Not just "what happened" but "why did it happen" and "what do we do about it." I enjoy working with teams who ask good questions and aren't afraid to challenge their assumptions.
-                        </p>
-                          <p>
-                            Beyond the work itself, I'm fascinated by how organizations learn and adapt. How do you build a culture where data informs decisions instead of paralyzes them? How do you communicate uncertainty without sounding like you don't have answers?
-                        </p>
-                        <p>
-                            I'm based in Kathmandu and available for consulting, strategic projects, and conversations with teams building thoughtful products.
-                        </p>
+                        <p>I'm an analyst and strategist who believes data is only useful when it changes how you think.</p>
+                        <p>For years now, I've worked across different problems—understanding user behavior, building reporting systems that people actually use, identifying opportunities hidden in numbers. I'm equally comfortable deep in analysis and translating findings for non-technical leaders. That duality matters to me.</p>
+                        <p>I'm drawn to problems that require digging. Not just "what happened" but "why did it happen" and "what do we do about it." I enjoy working with teams who ask good questions and aren't afraid to challenge their assumptions.</p>
+                        <p>Beyond the work itself, I'm fascinated by how organizations learn and adapt. How do you build a culture where data informs decisions instead of paralyzes them? How do you communicate uncertainty without sounding like you don't have answers?</p>
+                        <p>I'm based in Kathmandu and available for consulting, strategic projects, and conversations with teams building thoughtful products.</p>
                     </div>
 
                     <!-- Headshot -->
@@ -123,7 +110,7 @@
             </div>
         </section>
 
-        <!-- Works Section -->
+        <!-- Works Section (Commented Out) -->
         <!--
         <section id="works">
             <div class="container">
@@ -155,15 +142,11 @@
                     </div>
                 </div>
                 <div style="text-align: center;">
-    <a href="portfolio.html" class="see-more-button">
-        See More Projects →
-    </a>
-</div>
-
+                    <a href="portfolio.html" class="see-more-button">See More Projects →</a>
+                </div>
             </div>
         </section>
         -->
-
 
         <!-- Contact Section -->
         <section id="contact">
@@ -173,32 +156,38 @@
                     <h2>Contact Me</h2>
                 </div>
                 <div class="contact-form">
-                    <form onsubmit="handleSubmit(event)">
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
+
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
+
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
+
+                        <!-- Inline success/error message -->
+                        <div id="formMessage" style="margin-top: 10px; font-weight: bold;"></div>
+
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Ashim Shrestha. All rights reserved. | Designed with passion</p>
+        <p>&copy; <span id = "currentYear"></span> Ashim Shrestha. All rights reserved. | Designed with passion</p>
     </footer>
 
-    
     <script src="js/script.js"></script>
 </body>
 
