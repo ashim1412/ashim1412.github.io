@@ -1,68 +1,125 @@
-# Portfolio Website - Professional Structure
+# 👋 Hi, I’m Ashim Shrestha
 
-## Project Structure
+I’m a **Senior Data Analyst / Analytics Engineer (Product Analytics–leaning)** with experience building reliable analytics foundations and translating data into product and business decisions.
 
-```
-portfolio-project/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # All CSS styles
-├── js/
-│   └── script.js       # All JavaScript logic
-├── README.md           # This file
-└── assets/             # (Optional) For images, fonts, etc.
-```
-
-## File Descriptions
-
-### index.html
-- Main HTML file
-- References external CSS and JS files
-- Contains semantic HTML structure
-- Ready to deploy
-
-### css/styles.css
-- All styling separated from HTML
-- Organized with CSS variables
-- Responsive design with breakpoints
-- Easy to maintain and debug
-
-### js/script.js
-- All JavaScript functionality
-- Form handling
-- Smooth scroll navigation
-- Event listeners for interactive elements
-
-## How to Use
-
-1. Open `index.html` in your browser to view the portfolio
-2. Edit `css/styles.css` for styling changes
-3. Edit `js/script.js` for functionality changes
-4. Add new sections by extending the HTML and corresponding styles
-
-## Development Tips
-
-- Keep CSS organized with comments
-- Use meaningful class names
-- Test changes in browser DevTools
-- Use CSS variables for colors and spacing
-- Keep JavaScript modular with separate functions
-
-## Deployment
-
-This structure is production-ready. Simply upload to your hosting:
-- Upload all files maintaining the folder structure
-- Update any hardcoded URLs if deploying to a subdirectory
-- Consider adding image assets in an `assets/` folder
-
-## Next Steps
-
-1. Add more projects/experiences to the portfolio
-2. Integrate with a contact form backend service
-3. Add image assets for projects
-4. Consider adding animations with CSS or GSAP
-5. Add SEO optimization in HTML head
-6. Test on multiple devices and browsers
+I focus on **how data is produced, modelled, and consumed**, not just on reporting outputs. My work emphasises **trustworthy metrics, scalable data models, and insight-driven decision-making**.
 
 ---
-Created: December 2024
+
+## 💼 Experience & Impact
+
+### 📊 Data Analyst
+
+I work across **high-volume, complex datasets**, supporting decision-making through rigorous analysis, experimentation, and clear communication. My experience spans **customer behaviour analysis, product performance, and research-driven insights**, with a strong focus on data quality and hypothesis-led work.
+
+**What I do in practice:**
+- Analyse large-scale **transactional and behavioural datasets** to uncover patterns, risks, and opportunities  
+- Build **probability and predictive models** to support demand estimation and product decision-making  
+- Perform **exploratory analysis, hypothesis testing, and validation** to answer ambiguous business questions  
+- Define, standardise, and maintain **core metrics & KPIs** used across teams  
+- Translate open-ended problems into **structured analytical frameworks**  
+- Deliver insights via **dashboards, concise summaries, and actionable recommendations**  
+- Partner closely with stakeholders to support **research-driven and data-informed decisions**
+
+My focus is on **explainable analysis**, not black-box outputs.
+
+---
+
+## 🏗️ Analytics Engineering Mindset
+
+I approach analytics as a **system**, not a one-off analysis.
+
+- Model data for **reusability and consistency**
+- Prefer **clean transformations** over complex dashboards
+- Design datasets that support **self-serve analytics**
+- Optimize for **long-term maintainability**, not quick wins
+
+I care deeply about **metric correctness**, **data lineage**, and **semantic clarity**.
+
+---
+
+## 📈 Product Analytics Perspective
+
+From a product lens, I focus on:
+- User behaviour & lifecycle analysis
+- Funnel performance and drop-off points
+- Feature adoption and engagement signals
+- Translating usage data into **product hypotheses**
+
+I aim to help teams answer:
+> *What should we build, improve, or stop - and why?*
+
+---
+
+## 🔧 Tech Stack & Skills
+
+### Languages & Querying
+- SQL (PostgreSQL, MySQL)
+- Python (data analysis, API ingestion, automation)
+
+### Analytics & BI
+- Power BI
+- Tableau
+- Metabase  
+- Dashboard performance optimisation & stakeholder-ready reporting
+
+### Data Warehousing & Modeling
+- Analytical data warehouses (PostgreSQL, Snowflake / BigQuery – project-based)
+- Dimensional modelling (star schema, fact & dimension tables)
+- Slowly Changing Dimensions (SCDs)
+- Analytics-ready data marts & semantic layers
+- Metric definitions, ownership & consistency
+
+### Analytics Engineering & Pipelines
+- dbt (models, tests, documentation, incremental models)
+- ELT pipeline design (source → staging → marts)
+- Data quality checks (freshness, completeness, validity)
+- SQL-based transformations at scale
+
+### Orchestration & Automation
+- Workflow orchestration fundamentals
+- Scheduled pipelines, backfills & dependency management
+- Basic alerting & SLA awareness
+
+### Product Analytics
+- Event-based data modelling
+- Funnel & cohort analysis
+- North-star and guardrail metrics
+- Feature impact & behaviour analysis
+- A/B testing fundamentals
+
+### Foundations & Collaboration
+- Git & GitHub (PR-based workflows, code reviews)
+- Advanced Excel
+- Data storytelling & analytics documentation
+- Working closely with product & business stakeholders
+
+---
+
+## 🧠 How I Add Value
+
+- Bridge **technical data work** and **business decision-making**
+- Reduce metric confusion and dashboard sprawl
+- Ask better questions before running analysis
+- Turn raw data into **clear narratives**
+
+---
+
+## 🌍 About Me
+
+- 📍 Based in Kathmandu, Nepal  
+- 💼 Open to Remote **product analytics, analytics engineering, and senior analyst roles**
+- 🤝 Enjoy collaborating with engineers, product managers, and leadership teams
+
+---
+
+## 📬 Connect With Me
+
+- 🌐 Website: https://ashim-shrestha.com  
+- 💼 LinkedIn: https://www.linkedin.com/in/ashim-shrestha  
+- 📊 Tableau: https://public.tableau.com/app/profile/ashim.shrestha  
+- ✉️ Email: hello@ashim-shrestha.com  
+
+---
+
+*I believe strong analytics is built on clear definitions, solid models, and thoughtful interpretation.*
